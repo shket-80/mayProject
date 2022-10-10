@@ -1,0 +1,79 @@
+body{
+	padding: 0 10px 0 10px;
+	margin: 0px;
+	background: rgb(116, 115, 115);
+	a{
+		text-decoration: none;
+		color: rgb(67, 67, 244);
+	}
+	a:hover{
+		color:rgb(251, 71, 6);
+		text-decoration:underline;
+	}
+}
+.wrapper{
+	box-sizing: border-box;
+	background:rgb(255, 255, 255);
+	max-width: 1400px;
+	min-height: 500px;
+	margin: 0 auto;
+	padding: 50px 10px 10px 10px;
+}
+.lesson{
+	padding: 5px;
+	font-size: 30px;
+	border-bottom: 5px solid #000;
+}
+.anime{position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	margin-top: 10px;
+	background: rgb(246, 231, 138);
+	&__1, &__2{
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		background:blue;
+	}
+}
+.anime:hover > .anime__1{
+	animation-name: siz;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
+	//animation-timing-function:cubic-bezier(0.23, 1, 0.320, 1) ;
+	animation-timing-function:linear ;
+	//animation-fill-mode:forwards;
+}
+@keyframes siz{
+	0%{
+		left: 0px;
+		top: 0px;
+		background:blue
+	}
+	25%{
+		left: 375px;
+		top: 0px;
+		background:red;
+		border-radius: 25%;
+	}
+
+	50%{
+		top: 375px;
+		left: 375px;
+		background:green;
+		border-radius: 50%;
+	}
+	75%{
+		left: 0px;
+		top: 375px;
+		background:rgb(3, 217, 250);
+		border-radius: 25%;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+		background:blue;
+		border-radius:0%;
+	}
+}

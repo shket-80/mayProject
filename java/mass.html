@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="./css/mass.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="txtr">
+			<div class="txtr__block">
+				<imput class="info">Наполнить массив</imput>
+				<textarea name="value" id="value" cols="25" rows="1">1-element</textarea>
+			</div>
+			<div class="txtr__block2">
+				<imput class="info2"> массив</imput>
+				<textarea name="arry" id="arry" cols="100" rows="1"></textarea>
+			</div>
+		</div>
+		<div class="wrapper-btn"><button class="btn btnadd">add</button>
+			<span> - добавляет в массив</span>
+		</div>
+
+		<div class="wrapper-btn"><button class="btn btn1">push</button>
+			<span> - добавляет в конец массива</span>
+		</div>
+
+		<div class="wrapper-btn"><button class="btn btn2">pop</button>
+			<span> - удаляет в конце массива и возвращает</span>
+		</div>
+
+		<div class="wrapper-btn"><button class="btn btn3">unshift</button>
+			<span> -добавляет в начало массива</span>
+		</div>
+		<div class="wrapper-btn"><button class="btn btn4">shift</button>
+			<span> - удаляет в начале массива и возвращает</span>
+		</div>
+		<div id="splice" class="wrapper-btn">
+			<button class="btn btn5">splice</button>
+			<span> - удаляет элемент из массива , можно заменить удаленный элемент на другой</span>
+			<div class="spice-block">
+				<span>С какой позиции</span>
+				<textarea name="arg1" id="arg1" cols="2" rows="1"></textarea>
+				<span>Сколько позиций</span>
+				<textarea name="arg2" id="arg2" cols="2" rows="1"></textarea>
+				<span>Заменить на (через ,)</span>
+				<textarea name="arg3" id="arg3" cols="70" rows="1"></textarea>
+			</div>
+		</div>
+		<div class="txtr-arry">
+			<imput class="txtr-arry__info">Результат изменений массива</imput>
+			<textarea name="arrycopi" id="txtr-arry__copi" cols="100" rows="1"></textarea>
+		</div>
+		<innput class="viev">result</innput>
+
+	</div>
+	<div class="wrapper">
+		<h2 id="result" class="result"></h2>
+		<h2 class="result2"></h2>
+		<h2 class="result3"></h2>
+		<button class="btn btn6">slice</button>
+		<button class="btn btn7">concat</button>
+	</div>
+
+
+
+	<script type="module" src="js/mas.js"></script>
+</body>
+
+</html>
